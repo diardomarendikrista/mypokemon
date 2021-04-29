@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./assets/images/background.png');
+  background-position: center;
+  background-blend-mode: darken;
+  font-family: 'Roboto', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn-catchretreat {
+  width: 35%;
+}
+
+.btn-see-more-container {
+  text-align: center;
+}
+
+.btn-see-more {
+  margin: 10px;
+  width: 75%;
+  border-radius: 20px;
+}
+
+.card-pokemon {
+  /* border-color: #466E9A; */
+  width: 16rem;
+  border-radius: 20px;
+  margin: 10px;
+  transition: 100ms;
+}
+
+.card-pokemon:hover {
+  box-shadow: 0 0 10px 2px #B0DFF9;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+.card-mypokemon:hover {
+  cursor: default;
+}
+
+.card-pokemon:hover .card-img-top {
+  transform: scale(0.87);
+  transition: 400ms;
+}
+
+.card-pokemon:hover .card-body {
+  padding-left: 35px;
+  transition: 400ms;
+}
+
+.card-body {
+  background-color: #0A141E;
+  color: #fff;
+  padding: 5px;
+  padding-top: 15px;
+  padding-left: 20px;
+  transition: 200ms;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card-img-container {
+  background-color: #C8DBEA;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  transform: scale(0.95);
+  height: 300px;
+  transition: 200ms;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.detail-background {
+  background-image: url('./assets/images/background-detail.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.detail-container {
+  padding-bottom: 50px;
+}
+
+.detail-img {
+  max-width: 20rem;
+  height: 20rem;
+  margin-bottom: 20px;
+}
+
+.detail-name-text {
+  text-align: center;
+  font-size: 7.5vh;
+  font-weight: bold;
+  color: #E0A800;
+  text-shadow: 2px 1px 1px #23368F;
+}
+
+.detail-sub-title {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mobile-hr {
+  visibility: hidden;
+}
+
+.move-card {
+  margin: 3px;
+  padding: 5px 20px;
+  border-radius: 100px;
+  box-shadow: 0 0 5px 0px #0A141E;
+}
+
+.move-card:hover .move-card-text {
+  font-weight: bold;
+}
+
+.move-card-text {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mypokemon-empty {
+  margin-top: 50px
+}
+
+.mypokemon-title {
+  text-decoration: underline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 45px;
+}
+
+.mypokemon-delete-btn {
+  position: absolute;
+  width: 50px;
+  right: 10px;
+  top: 10px;
+  transition: 200ms;
+}
+
+.mypokemon-delete-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.navbar-container {
+  background-color: aqua;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-img {
+  height: 150px;
+}
+
+.navbar-menu a {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0px 0px 7px #000;
+}
+
+.navbar-menu a:hover {
+  color: #FEEC15;
+}
+
+.navbar-menu a:active {
+  color: #feeb15b6;
+}
+
+.navbar-home-btn {
+  margin-right: 15px;
+}
+
+.type-card {
+  margin: 3px;
+  padding: 5px 20px;
+  border-radius: 100px;
+  box-shadow: 0 0 5px 0px #0A141E;
+}
+
+.type-card:hover .type-card-text {
+  font-weight: bold;
+}
+
+.type-card-text {
+  margin: 0px;
+  padding: 0px;
+}
+
+.type-div {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-pokemon {
+    width: 9rem;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  .navbar-img {
+    height: 15vh;
+  }
+  .mobile-center {
+    text-align: center;
+    justify-content: center;
+  }
+  .mobile-hr {
+    visibility: visible;
+  }
+
+  .mypokemon-title {
+    text-align: center;
+  }
+
+  .mypokemon-delete-btn {
+    position: absolute;
+    width: 30px;
+    right: 10px;
+    top: 10px;
+    transition: 200ms;
+  }
+}
