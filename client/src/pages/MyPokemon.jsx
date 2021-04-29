@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 import Loading from '../components/Loading'
 import axios from '../axios';
 
-const baseURL = 'http://localhost:3000/';
+const baseURL = 'https://diardo-pokemon.herokuapp.com/';
 
 export default function MyPokemon (props) {
   const myPokemons = useSelector(state => state.mypokemon.myPokemons);

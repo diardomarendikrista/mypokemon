@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar'
 import Loading from '../components/Loading'
 import Swal from 'sweetalert2'
 
-const baseURL = 'http://localhost:3000/';
+const baseURL = 'https://diardo-pokemon.herokuapp.com/';
 
 export default function PokemonDetail (props) {
   const pokemon = useSelector(state => state.pokemon.pokemon);

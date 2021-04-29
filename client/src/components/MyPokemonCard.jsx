@@ -3,7 +3,7 @@ import releasepokemon from '../assets/images/release.png'
 import Swal from 'sweetalert2'
 import axios from '../axios';
 
-const baseURL = 'http://localhost:3000/';
+const baseURL = 'https://diardo-pokemon.herokuapp.com/';
 
 export default function PokemonCard (props) {
   const { pokemon } = props;
