@@ -6,10 +6,10 @@ import Loading from '../components/Loading'
 import axios from '../axios';
 
 export default function Home (props) {
-  const pokemons = useSelector(state => state.pokemons);
-  const next = useSelector(state => state.next);
-  const loading = useSelector(state => state.loading);
-  const loadingNext = useSelector(state => state.loadingNext);
+  const pokemons = useSelector(state => state.pokemon.pokemons);
+  const next = useSelector(state => state.pokemon.next);
+  const loading = useSelector(state => state.pokemon.loading);
+  const loadingNext = useSelector(state => state.pokemon.loadingNext);
   const dispatch = useDispatch();
 
   useEffect(_ => {

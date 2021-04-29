@@ -11,14 +11,15 @@ import Swal from 'sweetalert2'
 const baseURL = 'http://localhost:3000/';
 
 export default function PokemonDetail (props) {
-  const pokemon = useSelector(state => state.pokemon);
-  const loading = useSelector(state => state.loading);
+  const pokemon = useSelector(state => state.pokemon.pokemon);
+  const loading = useSelector(state => state.pokemon.loading);
   const { name } = useParams();
   const history = useHistory();
   const dispatch = useDispatch();
 
   useEffect(_ => {
     getDetail();
+    document.title = "Detail - Pokemon Master";
     // eslint-disable-next-line
   }, [])
 

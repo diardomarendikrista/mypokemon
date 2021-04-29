@@ -9,13 +9,14 @@ import axios from '../axios';
 const baseURL = 'http://localhost:3000/';
 
 export default function MyPokemon (props) {
-  const myPokemons = useSelector(state => state.myPokemons);
-  const loading = useSelector(state => state.loading);
+  const myPokemons = useSelector(state => state.mypokemon.myPokemons);
+  const loading = useSelector(state => state.mypokemon.loading);
   const dispatch = useDispatch();
   const history = useHistory();
 
   useEffect(_ => {
     fetchMyPokemon();
+    document.title = "My Pokemon - Pokemon Master";
     // eslint-disable-next-line
   }, [])
 
@@ -55,7 +56,6 @@ export default function MyPokemon (props) {
     )
   }
 
-  if (loading) return <Loading />
   return (
     <div className="container">
       <Navbar />
@@ -64,6 +64,7 @@ export default function MyPokemon (props) {
       </div>
       <div className="d-flex flex-wrap justify-content-center">
         {
+          loading ? <Loading /> :
           myPokemons.length === 0 ? emptyMyPokemon() :
           myPokemons.map(myPokemon => (
             <MyPokemonCard
